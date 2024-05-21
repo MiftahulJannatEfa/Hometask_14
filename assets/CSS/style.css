@@ -1,0 +1,453 @@
+*{
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p, img, a, button{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*--Header--*/
+header{
+    background-color: #fef8ff;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0px 28px;
+}
+header nav ul li a{
+    font-size: 18px;
+    font-family: Arimo, sans-serif;
+    color: #6f6c6c;
+    padding: 90px 0px;
+}
+header nav ul li a:hover{
+    color: #00b8ef;
+}
+header nav ul li .active{
+    color: #00b8ef;
+}
+header nav ul li span button{
+    padding: 22px 18px;
+    background-color: #31c7f3;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Arimo, sans-serif;
+    color: white;
+    border: none;
+}
+header nav ul li span button{
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+header nav ul li span button{
+    padding: 20px 20px;
+    border-radius: 5px;   
+}
+header nav ul li span button:hover{
+    background-color: #5e5b5b;
+    color: #fff;
+}
+/* banner */
+header .row{
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+}
+header .row .contains{
+    width: 535px;
+}
+header .row .contains h1{
+    font-family: Abril Fatface, sans-serif;
+    font-size: 58px;
+    color: #222222;
+}
+header .row .contains p{
+    font-family: Arimo, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+    margin-top: 20px;
+}
+/* banner end */
+/* ---HeaderEnd--- */
+/* categories */
+#categories .container{
+    width: 1170px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#categories .container .contains{
+    text-align: center;
+    width: 565px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+#categories .container .contains h1{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 52px;
+    padding: 20px 0;
+    color: #222;
+}
+#categories .container .contains hr{
+    width: 50px;
+    height: 3px;
+    border: 2px solid #0ebcf0;
+    margin: auto;
+}
+#categories .container .contains p{
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #444444;
+}
+#categories .container .row{
+    margin: 15px 0px;
+}
+#categories .container .row .card{
+    width: calc(25% - 30px);
+    background-color: #e7e5e5;
+    box-shadow: 2px 2px #9f9e9e ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 50px;
+    margin: 0px 15px;
+    border-radius: 5px;
+    position: relative;
+}
+#categories .container .row .card .overlay{
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    background-color: #00b8ef;
+    opacity: 0;
+    border-radius: 5px;
+    color: #fff;
+}
+#categories .container .row .card .overlay h2{
+    color: #fff;
+}
+#categories .container .row .card .overlay p{
+    color: #fff;
+}
+#categories .container .row .card:hover .overlay{
+    transform: scale(1);
+    transition: 0.8s;
+    opacity: 1;
+}
+#categories .container .row .card .overlay span button{
+    margin: 25px 0px;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #00b8ef;
+    font-size: 16px;
+    font-family:"Arimo", sans-serif;;
+}
+/* categories-end */
+ /* work */
+ #work{
+    padding: 170px;
+}
+#work .text{
+  text-align: center;
+}
+#work .text h1{
+  font-size: 50px;
+  font-weight: 400px;
+  color: #262626;
+  font-family: "Abril Fatface", serif;
+}
+#work .text hr{
+  align-items: center;
+     border: 2px solid #0ebcf0; 
+      width: 50px;
+      margin: 20px auto;
+}
+#work .text p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Arimo", sans-serif;
+  color: #444444;
+  line-height: 30px;
+  width: 565px;
+  margin: auto;
+}
+#work .continer .contain{
+   width:calc(33.33% - 30px);
+   text-align: center;
+   padding-top: 62px;
+   margin: 0 15px;
+}
+#work .contain h2{
+  font-size: 20px;
+  color: #222;
+  font-family: "Abril Fatface", serif;
+   padding: 20px;
+   text-transform: capitalize;
+}
+#work .contain img{
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #d0cfcf;
+  box-shadow: 2px 2px 2px 2px;
+}
+#work .contain img:hover{
+    background-color: #0ebcf0; 
+}
+#work .contain p{
+  font-size: 16px;
+  color: #444;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Arimo", sans-serif;
+  width: 370px;
+}
+/* work-end */
+/*--worker-- */
+#worker{
+    background-color: #f5f5f5;
+  }
+#worker .container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+}
+#worker .container .contains{
+    text-align: center;
+    width: 565px;
+    margin-bottom: 100px;
+}
+#worker .container .contains h2{
+    font-family: Abril Fatface, sans-serif;
+    font-size: 32px;
+    color: #222222;
+    padding: 20px 0px; 
+}
+#worker .container .contains p{
+    font-family: Arimo, sans-serif;
+    font-size: 16px;
+    color: #444444;
+    margin-top: 15px;
+}
+#worker .container .row .card{
+    background-color: #ffffff;
+    padding: 29px 30px;
+    width: calc(33.33% - 30px);
+    margin: 0px 5px;
+    border-radius: 5px;
+}
+#worker .container .row .card h3{
+    margin-top: 20px;
+}
+#worker .container .row .card h3{
+    font-family: Arimo, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #222222;
+}
+#worker .container .row .card h4{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Arimo, sans-serif;
+    font-size: 16px;
+    color: #222222;
+}
+#worker .container .row .card .data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #666363;
+    padding: 15px 0px;
+ }
+#worker .container .row .card .table{
+    margin-top: 30px;
+}
+#worker .container .row .card .bottom-h3{
+    margin-top: 30px;
+    position: relative;
+}
+#worker .container .row .card .bottom-h3::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 10%;
+    background-color: #0ebcf0;
+    bottom: -30px;
+    left: 27px;
+    opacity: 0;
+    transition: 0.5s;
+}
+#worker .container .row .card:hover .bottom-h3::after{
+    opacity: 1;
+    width: 80%;
+}
+#worker .container .row .card:hover .bottom-h3{
+    color: #0ebcf0;
+}
+#worker .container .row .card:hover{
+    box-shadow: 2px 2px 10px gray;
+}
+#worker .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0px;
+}
+#worker .container .row h6{
+    margin-left: 15px;
+    font-family: Arimo, sans-serif;
+    font-size: 16px;
+    color: #444444;
+}
+#worker .container .row span{
+    margin-right: 15px;
+}
+#worker .container .row span button{
+    background-color: #51a7f3;
+    color: #ffffff;
+    padding: 20px 18px;
+    border-radius: 5px;
+    border: 2px;
+    box-shadow: 2px 2px #000000;
+    font-family: Arimo, sans-serif;
+    font-size: 15px;
+}
+#worker .container .row span button:hover{
+    background-color: #7b7777;
+    color: #ffffff;
+}
+/* --worker-end-- */
+/*--footer-- */
+footer{
+  background-image: url('../images/footer-background-photo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  color: #000000;
+  opacity: 1px;
+}
+footer .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+footer .container .row{
+  padding: 90px 0px;
+}
+footer .container .row .card{
+  width: 33.33%;
+}
+footer .container .row .card h3{
+  font-family: Abril Fatface, sans-serif;
+  font-size: 24px;
+  color: #000000;
+}
+footer .container .row .card p{
+  font-family: Arimo, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 26px;
+}
+footer .container .row .card a{
+  font-family: Arimo, sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+  display: inline-block;
+}
+footer .container .row .card .row{
+  padding: 0px;
+}
+footer .container .row .card .row .box{
+  margin: 0px 18px;
+  width: calc(50% - 40px);
+}
+footer .container .row .card .row .box li{
+  line-height: 40px;
+  font-family: Arimo, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  position: relative;
+}
+footer .container .row .card .row .box li::before{
+  content: '';
+  position: absolute;
+}
+footer .container .card form{
+  padding: 30px 0px;
+}
+footer .container .card form input{
+  outline: none;
+  border: 1px solid rgb(2, 2, 2);
+  background-color: transparent;
+  width: 243px;
+  height: 44px;
+  border-right: 1px solid #00b8ef;
+  text-align: center;
+}
+footer .container .card form label{
+  padding: 12.5px 20px;
+  color: rgb(0, 0, 0);
+  background-color: #00b8ef;
+  margin-left: -5px;
+  border: none;
+  outline: none;
+}
+footer .container .card p span button {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  background-color: #030202;
+  color: #202020;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background: url(assets/images/footer-background-photo.png);
+}
+footer .container .card p span:hover button{
+  color: rgb(0, 0, 0);
+  background-color: #00b8ef;
+}
+/* footer ends */
